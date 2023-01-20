@@ -15,6 +15,11 @@ public class Cirurgiao extends Medico{
         return null;
     }
 
+    @Override
+    public String fazerDiagnostico(List<String> sintomas) {
+        return null;
+    }
+
     public void reservarSala(int dia, int hora){
         System.out.println("Reservando sala cirurgia");
     }

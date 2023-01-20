@@ -8,6 +8,18 @@ public class Paciente extends Pessoa{
 
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Paciente paciente)) return false;
+        return true;
+    }
+
+    @Override
+    public int hashCode() {
+        return Arrays.hashCode(listaSintomas);
+    }
+
     public ArrayList<String> listadeSintomas(){
         return new ArrayList<String>(Arrays.asList (listaSintomas));
     }
@@ -26,7 +38,7 @@ public class Paciente extends Pessoa{
     }
 
     public void setListaSintomas(String listaSintomas) {
-        this.listaSintomas = listaSintomas;
+        this.listaSintomas = new String[]{listaSintomas};
     }
 
 }

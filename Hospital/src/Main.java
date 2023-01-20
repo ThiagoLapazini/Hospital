@@ -21,8 +21,8 @@ public class Main {
 
         Neurocirurgiao neuro = new Neurocirurgiao("Doutor",29,484555) ;
         neuro.baterPonto(13,13,29);
-        sala.reservarSala(14,23,59);
         neuro.fazerDiagnostico();
+        sala.reservarSala(14,23,59);
         neuro.fazerDiagnostico(Collections.singletonList("Depressão"));
 
         ClinicoGeral clinico = new ClinicoGeral("Doutor2", 36,7643743);
